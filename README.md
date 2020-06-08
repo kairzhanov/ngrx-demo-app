@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Materials Used
 
-https://mherman.org/blog/authentication-in-angular-with-ngrx/
-https://medium.com/letsboot/quick-start-with-angular-material-and-flex-layout-1b065aa1476c
-https://material.angular.io/guide/getting-started
-https://angular.io/docs
-https://gist.github.com/btroncone/a6e4347326749f938510#overview
+- https://mherman.org/blog/authentication-in-angular-with-ngrx/
+- https://medium.com/letsboot/quick-start-with-angular-material-and-flex-layout-1b065aa1476c
+- https://material.angular.io/guide/getting-started
+- https://angular.io/docs
+- https://gist.github.com/btroncone/a6e4347326749f938510#overview
 
 
 ## Development server
