@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <a mat-button [routerLink]="['/']">
+        <h1>NGRX Demo App</h1>
+      </a>
+      
+      <span class="menu-spacer"></span>
+      
+      
+      <div *ngIf="isAuthenticated; then showProfile; else showLogin;"></div>
+      <ng-template #showProfile>
+        <span>Welcome, <em>{{user.email}}!</em></span>
+        <button mat-button (click)="logOut()">Log out</button>
+      </ng-template>
+      <ng-template #showLogin>
+        <a mat-button [routerLink]="['/login']">Log in</a>
+        <a mat-button [routerLink]="['/register']">Register</a>
+      </ng-template>
+    </mat-toolbar-row>
+</mat-toolbar>
