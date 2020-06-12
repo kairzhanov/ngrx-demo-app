@@ -33,6 +33,7 @@ import { TokenInterceptor, ErrorInterceptor } from './services/token.interceptor
 import { AuthGuard } from './services/auth-guard.service';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { SecretComponent } from './components/secret/secret.component';
+import { TaskEffects } from './store/effects/task.effects';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { SecretComponent } from './components/secret/secret.component';
     FlexLayoutModule,
     StoreModule.forRoot(reducers, {}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
-    EffectsModule.forRoot([AuthEffects]),
+    EffectsModule.forRoot([AuthEffects, TaskEffects]),
     StoreRouterConnectingModule.forRoot(),
     BrowserAnimationsModule,
     // StoreModule.forRoot(reducers, {
